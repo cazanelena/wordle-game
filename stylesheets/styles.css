@@ -25,3 +25,8 @@
     gap: .25em;
     margin-bottom: 1em;
 }
+.space {
+    background-color: red;
+    height: 30px;
+    width: 30px;
+}
