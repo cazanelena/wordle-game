@@ -103,3 +103,36 @@ body {
   .alert.hide {
     opacity: 0;
   }
+
+
+  .key:hover, .key:focus {
+    --lightness-offset: 10%;
+  }
+  
+  .key.wrong {
+    background-color: black;
+    --lightness: 23%;
+  }
+  
+  .key.wrong-location {
+    background-color: yellow;
+ 
+    --saturation: 51%;
+    --lightness: 47%;
+  }
+  
+  .key.correct {
+    background-color: green;
+    --saturation: 29%;
+    --lightness: 43%;
+  }
+
+  .tile.correct {
+    background-color: green;
+  }
+  .tile.wrong-location {
+    background-color: yellow;
+  }
+  .tile.wrong {
+    background-color: grey;
+  }

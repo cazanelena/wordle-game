@@ -1,6 +1,8 @@
 import { pressKey, deleteKey } from "./pressDeleteKey.js";
 import { submitUserGuess } from "./submitGuess.js";
+import { getActiveTiles } from "./pressDeleteKey.js";
 
+let active = getActiveTiles();
 export function startGame() {
     document.addEventListener('click', handleMouseClick);
     document.addEventListener('keydown', handleKeyPress);
