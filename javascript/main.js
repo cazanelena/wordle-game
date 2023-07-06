@@ -6,6 +6,7 @@ import { startGame, endGame } from "./startEndGame.js";
 
 
 
+
 // Display the tiles using JS
 displayGridTiles()
 
@@ -16,3 +17,4 @@ displayKeyboard()
 
 startGame()
 
+console.log(getSecretWord())
