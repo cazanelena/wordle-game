@@ -12,9 +12,7 @@ displayGridTiles()
 
 
 //Display the keyboard using JS
-
 displayKeyboard()
 
 startGame()
 
-console.log(getSecretWord())

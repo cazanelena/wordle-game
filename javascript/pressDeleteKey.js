@@ -10,7 +10,7 @@ export function pressKey(key) {
     nextTile.dataset.state = 'active'
 }
 
-function getActiveTiles() {
+export function getActiveTiles() {
     return guessGrid.querySelectorAll("[data-state='active']")
 }
 
