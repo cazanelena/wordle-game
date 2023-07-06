@@ -38,7 +38,6 @@ export function submitUserGuess() {
         alertMessage('YOU WON!')
     }
     
-    
     activeTiles.forEach((...parameters) => showColorTile(...parameters, guessedWord, targetWord))
 }
 

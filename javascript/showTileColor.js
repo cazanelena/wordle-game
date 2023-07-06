@@ -1,5 +1,6 @@
 import { startGame } from "./startEndGame.js"
 
+
 export function  showColorTile(tile, index, array, guess, correctWord) {
     const keyboard = document.querySelector("[data-keyboard]")
 
