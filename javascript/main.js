@@ -1,7 +1,5 @@
 import { displayGridTiles } from "./displayGrid.js";
-
 import { displayKeyboard } from "./displayKeyboard.js";
-
 import { startGame, endGame } from "./startEndGame.js";
 
 
