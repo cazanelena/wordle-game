@@ -97,10 +97,7 @@ body {
     opacity: 1;
     transition: opacity 500ms ease-in-out;
     margin-bottom: .5em;
-  }
-  
-  .alert:last-child {
-    margin-bottom: 0;
+    text-align: center;
   }
   
   .alert.hide {

@@ -10,7 +10,7 @@ export function submitUserGuess() {
 
     // If the lenght of the tiles is not 5 can't submit the guess
     if (activeTiles.length !== 5){
-        alertMessage("Not 5 letters long")
+        alertMessage("Not enough letters!")
         return 
     }
 
@@ -25,15 +25,11 @@ export function submitUserGuess() {
 
     // Check if the guess exist in the dictionart file
     if (!dictionary.includes(guessedWord)) {
-        console.log('Word does not exist in our dictionary')
-        alertMessage('Word does not exist in our dictionary')
-
-        // TO DO create an alert message 
+        alertMessage('Word does not exist in our dictionary!')
         return
     }
     else {
-        console.log('your word was in the dict')
-        alertMessage('Word found in our dictionary')
+        alertMessage('Word found in our dictionary!')
     }
 }
 
