@@ -1,6 +1,7 @@
 
 import { getActiveTiles } from "./pressDeleteKey.js";
 import { dictionary } from "./dictionary.js";
+import { alertMessage } from "./alertMessage.js";
 
 
 export function submitUserGuess() {
@@ -9,8 +10,7 @@ export function submitUserGuess() {
 
     // If the lenght of the tiles is not 5 can't submit the guess
     if (activeTiles.length !== 5){
-        console.log("Not 5 letters long")
-        //TO DO create a show alert message
+        alertMessage("Not enough letters!")
         return 
     }
 
@@ -25,13 +25,11 @@ export function submitUserGuess() {
 
     // Check if the guess exist in the dictionart file
     if (!dictionary.includes(guessedWord)) {
-        console.log('Word does not exist in our dictionary')
-
-        // TO DO create an alert message 
+        alertMessage('Word does not exist in our dictionary!')
         return
     }
     else {
-        console.log('your word was in the dict')
+        alertMessage('Word found in our dictionary!')
     }
 }
 
