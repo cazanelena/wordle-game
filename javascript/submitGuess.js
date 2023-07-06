@@ -1,5 +1,6 @@
 
 import { getActiveTiles } from "./pressDeleteKey.js";
+import { dictionary } from "./dictionary.js";
 
 
 export function submitUserGuess() {
@@ -21,5 +22,16 @@ export function submitUserGuess() {
     })
     const guessedWord = guessLettersArray.join('')
     console.log(guessedWord)
+
+    // Check if the guess exist in the dictionart file
+    if (!dictionary.includes(guessedWord)) {
+        console.log('Word does not exist in our dictionary')
+
+        // TO DO create an alert message 
+        return
+    }
+    else {
+        console.log('your word was in the dict')
+    }
 }
 
