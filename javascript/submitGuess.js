@@ -2,8 +2,12 @@
 import { getActiveTiles } from "./pressDeleteKey.js";
 import { dictionary } from "./dictionary.js";
 import { alertMessage } from "./alertMessage.js";
+import { endGame } from "./startEndGame.js";
+import { showColorTile } from "./showTileColor.js";
+import { getSecretWord } from "./getSecretWord.js";
 
-
+let targetWord = getSecretWord()
+console.log('Target role is', targetWord)
 export function submitUserGuess() {
     // Use this as an array so then I can map/reduce the values
     const activeTiles = [...getActiveTiles()]
@@ -28,8 +32,13 @@ export function submitUserGuess() {
         alertMessage('Word does not exist in our dictionary!')
         return
     }
-    else {
-        alertMessage('Word found in our dictionary!')
+
+    if (targetWord === guessedWord) {
+        endGame()
+        alertMessage('YOU WON!')
     }
+    
+    
+    activeTiles.forEach((...parameters) => showColorTile(...parameters, guessedWord, targetWord))
 }
 
