@@ -1,4 +1,4 @@
-[
+export const secretWords = [
     "aahed",
     "aalii",
     "aargh",
