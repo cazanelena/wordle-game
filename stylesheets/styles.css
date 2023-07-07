@@ -3,7 +3,7 @@
 *::after {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 body {
@@ -12,8 +12,13 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 1em;
-    font-size: clamp(.5rem, 2.5vmin, 1.5rem);
   }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
   
 .tile {
     user-select: none;
@@ -23,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 3px solid black;
 }
 #tiles-container {
     display: grid;
@@ -34,7 +40,6 @@ body {
     gap: .25em;
     margin-bottom: 1em;
 }
-
 
 #keyboard {
     display: grid;
@@ -52,11 +57,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(
-      var(--hue, 200),
-      var(--saturation, 1%),
-      calc(var(--lightness-offset, 0%) + var(--lightness, 51%))
-    );
+    background-color: rgb(120, 120, 103);
     color: white;
     fill: white;
     text-transform: uppercase;
@@ -72,10 +73,6 @@ body {
   .key > svg {
     width: 1.75em;
     height: 1.75em;
-  }
-  
-  .key:hover, .key:focus {
-    --lightness-offset: 10%;
   }
 
   .alert-container {
@@ -106,32 +103,26 @@ body {
 
 
   .key:hover, .key:focus {
-    --lightness-offset: 10%;
+  opacity: 0.5;
   }
   
   .key.wrong {
     background-color: black;
-    --lightness: 23%;
   }
   
   .key.wrong-location {
-    background-color: yellow;
- 
-    --saturation: 51%;
-    --lightness: 47%;
+    background-color: rgb(221, 198, 24);
   }
   
   .key.correct {
     background-color: green;
-    --saturation: 29%;
-    --lightness: 43%;
   }
 
   .tile.correct {
     background-color: green;
   }
   .tile.wrong-location {
-    background-color: yellow;
+    background-color: rgb(221, 198, 24);
   }
   .tile.wrong {
     background-color: grey;
