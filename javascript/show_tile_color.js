@@ -1,5 +1,5 @@
-import { endGame, startGame } from "./startEndGame.js"
-import { alertMessage } from "./alertMessage.js"
+import { endGame, startGame } from "./start_end_game.js"
+import { alertMessage } from "./alert_message.js"
 
 export function  showColorTile(tile, index, array, guess, correctWord) {
     const keyboard = document.querySelector("[data-keyboard]")
