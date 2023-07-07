@@ -1,10 +1,10 @@
 
-import { getActiveTiles } from "./pressDeleteKey.js";
+import { getActiveTiles } from "./press_delete_key.js";
 import { dictionary } from "./dictionary.js";
-import { alertMessage } from "./alertMessage.js";
-import { endGame } from "./startEndGame.js";
-import { showColorTile } from "./showTileColor.js";
-import { getSecretWord } from "./getSecretWord.js";
+import { alertMessage } from "./alert_message.js";
+import { endGame } from "./start_end_game.js";
+import { showColorTile } from "./show_tile_color.js";
+import { getSecretWord } from "./get_secret_word.js";
 
 let targetWord = getSecretWord()
 console.log('Target role is', targetWord)

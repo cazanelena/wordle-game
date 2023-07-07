@@ -1,6 +1,6 @@
-import { displayGridTiles } from "./displayGrid.js";
-import { displayKeyboard } from "./displayKeyboard.js";
-import { startGame, endGame } from "./startEndGame.js";
+import { displayGridTiles } from "./display_grid.js";
+import { displayKeyboard } from "./display_keyboard.js";
+import { startGame, endGame } from "./start_end_game.js";
 
 
 
