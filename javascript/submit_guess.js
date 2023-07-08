@@ -7,7 +7,9 @@ import { showColorTile } from "./show_tile_color.js";
 import { getSecretWord } from "./get_secret_word.js";
 
 let targetWord = getSecretWord()
-console.log('Target role is', targetWord)
+
+console.log('Target word is', targetWord)
+
 export function submitUserGuess() {
     // Use this as an array so then I can map/reduce the values
     const activeTiles = [...getActiveTiles()]
@@ -27,7 +29,7 @@ export function submitUserGuess() {
     const guessedWord = guessLettersArray.join('')
     console.log(guessedWord)
 
-    // Check if the guess exist in the dictionart file
+    // Check if the guess exist in the dictionary file
     if (!dictionary.includes(guessedWord)) {
         alertMessage('Word does not exist in our dictionary!')
         return
