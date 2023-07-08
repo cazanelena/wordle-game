@@ -29,7 +29,7 @@ export function  showColorTile(tile, index, array, guess, correctWord) {
 
 function checkWinLose (guess, _, correctWord){
     if (guess === correctWord) {
-        alertMessage('You Won!', 5000)
+        alertMessage('You Won!', null)
         endGame()
         return
     }

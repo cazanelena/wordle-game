@@ -35,7 +35,6 @@ export function submitUserGuess() {
 
     if (targetWord === guessedWord) {
         endGame()
-        alertMessage('YOU WON!')
     }
     
     activeTiles.forEach((...parameters) => showColorTile(...parameters, guessedWord, targetWord))
