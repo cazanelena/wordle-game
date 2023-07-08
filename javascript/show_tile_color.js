@@ -37,5 +37,6 @@ function checkWinLose (guess, _, correctWord){
     let tilesLeft = guessGrid.querySelectorAll(":not([data-letter])")
     if (tilesLeft.length === 0) {
         alertMessage(`You lost! The correct word is ${correctWord}`, null)
+        endGame()
     }
 }
