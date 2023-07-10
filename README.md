@@ -10,6 +10,6 @@
 
 # Deployment
  
- - I deployed the website on aws s3 using terraform. The url is [here] (https://elenas-wordle.s3.eu-west-2.amazonaws.com/index.html)
+ - I deployed the website on aws s3 using terraform. The url is [here](https://elenas-wordle.s3.eu-west-2.amazonaws.com/index.html)
  - I wrote a script that uploads the frontend files to the S3 bucket.
 
